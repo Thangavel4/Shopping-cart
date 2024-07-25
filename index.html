@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar" style="background-color: #7776B3;color: #FFF6E9;">
+        <a class="navbar-brand" href="#" style="color: #FFF6E9; margin: 0px 4px; font-weight: bold;">Mobile Shopping</a>
+        <div style="display: flex;justify-content: space-between;">
+            <a class="nav-link" href="#"><i class="fa-regular fa-user"></i> Login</a>
+            <button class="nav-link" id="cart-button"><i class="fa-solid fa-cart-plus"></i><span id="count" style="margin: 2px;">0</span></button>
+        </div>
+    </nav>
+
+    <div class="off-canvas" id="off-canvas-cart">
+        <div class="off-canvas-content" style="padding:2px 25px;">
+            <button id="close-button">&times;</button>
+            <div style="color:#5300f8;font-size:25px;font-weight: bold;">My Cart</div>
+            <div id="cartItem">Your Cart is Empty</div>
+            <div class="foot">
+                <h3>Total</h3>
+                <h3 id="total">&#8377;0.00</h3>
+            </div>
+            <button id="buy-button">Buy Now</button>
+        </div>
+    </div>
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <p>Your order is placed</p>
+        </div>
+    </div>
+
+    <div class="container" style="padding: 0%; margin-top: 10px;">
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div id="img">
+                            <img src="./img1.jpeg" alt="img1">
+                        </div>
+                        <h3>Samsung Galaxy S24 Ultra</h3><br>
+                        <h5><span>&#8377;</span> 125,000</h5><br>
+                        <dl>Description</dl>
+                        <li>12 GB RAM | 256 GB ROM</li>
+                        <li>17.27 cm (6.8 inch) Quad HD+ Display</li>
+                        <li>200MP + 50MP + 12MP + 10MP|12MP</li>
+                        <li>5000 mAh Battery</li>
+                        <li>Snapdragon 8 Gen 3 Processor</li>
+                        <p style="text-align: justify;">Behold the Samsung Galaxy S24 Ultra smartphone, an exceptional amalgamation of incredible technology and superior sophistication. Whether you're typing up a storm or jotting something down, Note Assist makes a long story short. New AI-powered editing options let you get the photo you want, like relocating objects and intelligently filling in the space they left behind.</p>
+                        <button class="btn border add-to-cart" style="background-color:orange;color:white;">ADD TO CART</button>
+                        <button class="btn border buy-now" style="background-color:#fb641b;color:white; float: right;">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div id="img">
+                            <img src="./img2.jpeg" alt="img2">
+                        </div>
+                        <h3>Iphone 15 Pro Max</h3><br><br>
+                        <h5><span>&#8377;</span> 139,990</h5><br>
+                        <dl>Description</dl>
+                        <li>256 GB ROM</li>
+                        <li>17.02 cm(6.7 inch) Super Retina XDR Display</li>
+                        <li>48MP + 12MP + 12MP | 12MP</li>
+                        <li>A17 Pro Chip, 6 Core Processor Processor</li>
+                        <p style="text-align: justify;">iPhone 15 Pro Max, a titanium marvel, boasts an aerospace-grade build, making it the lightest Pro model ever. The A17 Pro Chip marks a historic leap in Apple GPUs, delivering unparalleled graphics performance and immersive gaming experiences. The camera system shines with a 48 MP Main camera, offering remarkable  portrait . Convenience is key with the Action button for quick tasks and Focus filters.</p>
+                        <button class="btn border add-to-cart" style="background-color:orange;color:white;">ADD TO CART</button>
+                        <button class="btn border buy-now" style="background-color:#fb641b;color:white; float: right;">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div id="img">
+                            <img src="./img3.jpeg" alt="img1">
+                        </div>
+                        <h3>SAMSUNG Galaxy Z Flip3 5G</h3><br>
+                        <h5><span>&#8377;</span> 37,999</h5><br>
+                        <dl>Description</dl>
+                        <li>8 GB RAM | 128 GB ROM</li>
+                        <li>17.02 cm (6.7 inch) Full HD+ Display</li>
+                        <li>12MP + 12MP | 10MP</li>
+                        <li>3300 mAh Lithium-ion Battery</li>
+                        <li>Qualcomm Snapdragon 888 Octa-Core Processor</li>
+                        <p style="text-align: justify;">This smartphone comes with a 10.72 cm (4.2) display so that you can not only enjoy immersive visuals on a widescreen but also can conveniently fit it in your pocket. Also, you can check your messages, click photos, play music and do more without opening your phone, thanks to the 4.82 cm (1.9) . All you have to do is, adjust the angle and wait for hands-free selfies.</p>
+                        <button class="btn border add-to-cart" style="background-color:orange;color:white;">ADD TO CART</button>
+                        <button class="btn border buy-now" style="background-color:#fb641b;color:white; float: right;">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./bootstrap.min.js"></script>
+    <script src="./addtocard.js"></script>
+</body>
+</html>
